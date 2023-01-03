@@ -9,6 +9,8 @@ int main(){
     double number1, number2;
     int opcion;
 
+
+    cout<<"bienvenido"<<endl;
     cout<<"digite un numero"<<endl;
     cin>>number1;
     cout<<"digite otro numero"<<endl;
@@ -23,7 +25,7 @@ int main(){
         cout<<"la resta es: "<<resta(number1,number2);
     }
 
-
+    cout<<"gracias por la visita"<<endl;
     return 0;
 }
 
