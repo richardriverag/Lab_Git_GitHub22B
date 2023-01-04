@@ -7,6 +7,7 @@ int main(){
 
     string name;
     int edad;
+    cout<<"bienvenido"<<endl;
     cout<<"ingrese su nombre: "<<endl;
     getline(cin,name);
     cout<<endl;

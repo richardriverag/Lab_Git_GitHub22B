@@ -10,7 +10,7 @@ int main(){
     int opcion;
 
 
-    cout<<"bienvenido"<<endl;
+    cout<<"bienvenido al sistema"<<endl;
     cout<<"digite un numero"<<endl;
     cin>>number1;
     cout<<"digite otro numero"<<endl;
