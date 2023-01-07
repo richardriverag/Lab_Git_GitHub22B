@@ -1,0 +1,4 @@
+mi primera linea de codigo corregida
+nueva linea de codigo de la rama master para conflicto
+nueva linea de codigo en futuro con conflicto resuelto
+
