@@ -1,0 +1,62 @@
+texto 2 para prueba de github (texto aleatorio)
+un codigo de las ultimas practicas:
+#include <iostream>
+using namespace std;
+#include <fstream>
+#include <iomanip>
+int main(){
+int cantidad=1,i=1,Z;
+string letra = "X",datos,Opcion;
+string nombre,apellido,semestre,cedula,edad;
+ofstream archivo;
+ifstream archivo1;
+ cout << "ingrese yes para continuar e ingresar sus datos o X para terminar" << endl;
+ cin >> datos;
+archivo.open("Datos.txt"); 
+ while( datos != letra ){
+   
+   if(datos != letra){
+  cout << "ingrese sus cedula: " << endl;
+  cin >> cedula;
+  cout << "ingrese sus nombre: " << endl;
+  cin >> nombre;
+  cout << "ingrese sus apellido: " << endl;
+  cin >> apellido;
+  cout << "ingrese sus edad: " << endl;
+  cin >> edad;
+  cout << "ingrese sus semestre: " << endl;
+  cin >> semestre;
+     cantidad++;
+  }
+ cout << "ingrese yes para ingresar datos denuevo o X para terminar" << endl;
+ cin >> datos;
+
+ 
+ archivo << cedula << "     " << nombre << "     " << apellido << "     " << edad << "    " << semestre << endl;
+   }
+archivo.close(); 
+archivo1.open("Datos.txt");
+cout <<"desea el numero maximo de estudiantes o un valor especifico" <<endl;
+cout <<"digite Y para el maximo o X para un valor especifico" << endl;
+cin >> Opcion;
+if(Opcion == "X"){
+cout << "Ingrese la cantidad de estudiantes deseados:" <<endl;
+cin >> cantidad;
+  }
+while(i <= cantidad){
+archivo1 >> cedula; 
+archivo1 >> nombre;
+archivo1 >> apellido;
+archivo1 >> edad;
+archivo1 >> semestre;  
+cout << "Cedula: " << cedula << endl;
+cout << "Nombre: "  << nombre << endl;
+cout << "Apellido: " << apellido << endl;
+cout << "Edad: " << edad << endl;
+cout << "Semestre: " << semestre << endl;
+i++;
+cout << "             " << endl;
+}
+archivo1.close();
+return 0;  
+}
